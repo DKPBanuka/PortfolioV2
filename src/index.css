@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-terminal-black: #0f172a;
+  --color-terminal-dark: #020617;
+  --color-neon-green: #22c55e;
+  --color-neon-cyan: #06b6d4;
+  --color-neon-purple: #a855f7;
+  --color-neon-pink: #ec4899;
+
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-terminal-black text-slate-300 font-sans overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-mono text-white;
+  }
+
+  ::selection {
+    @apply bg-neon-green text-terminal-black;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+  }
+
+  .border-glow {
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.2);
+  }
+
+  .terminal-cursor::after {
+    content: '▋';
+    animation: blink 1s step-end infinite;
+    @apply text-neon-green ml-1;
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-terminal-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neon-green;
+}
