@@ -5,9 +5,9 @@ import SectionWrapper from '../components/SectionWrapper';
 import profileImg from '../assets/profile-image.png';
 
 const stats = [
-  { icon: <FaBriefcase size={30} />, value: '5+', label: 'Projects Completed' },
+  { icon: <FaBriefcase size={30} />, value: '7+', label: 'Projects Completed' },
   { icon: <FaCode size={30} />, value: '10+', label: 'Technologies' },
-  { icon: <FaGraduationCap size={30} />, value: '2nd', label: 'Year Undergraduate' },
+  { icon: <FaGraduationCap size={30} />, value: '3rd', label: 'Year Undergraduate' },
   { icon: <FaCoffee size={30} />, value: '100+', label: 'Coding Hours/Week' },
 ];
 

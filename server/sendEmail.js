@@ -4,7 +4,13 @@ import bodyParser from 'body-parser';
 import { Resend } from 'resend';
 import process from 'process';
 import dotenv from 'dotenv';
-dotenv.config();
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+dotenv.config({ path: path.join(__dirname, '../.env') });
 
 const app = express();
 app.use(cors());
@@ -18,6 +24,8 @@ if (!RESEND_API_KEY) {
 }
 
 const resend = new Resend(RESEND_API_KEY);
+
+app.use(express.static(path.join(__dirname, '../dist')));
 
 app.post('/api/send-email', async (req, res) => {
   try {
@@ -55,6 +63,12 @@ app.post('/api/send-email', async (req, res) => {
     const extra = err?.response?.data || err?.message || String(err);
     res.status(500).json({ ok: false, error: String(err), extra });
   }
+});
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
 app.listen(PORT, () => {

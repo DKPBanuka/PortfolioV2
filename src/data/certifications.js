@@ -66,7 +66,7 @@ export const certifications = [
         title: 'Jenkins: CI/CD with Jenkins',
         org: 'Udemy',
         issueDate: '2025',
-        credential: '',
+        credential: 'https://www.udemy.com/certificate/UC-73872441-f23b-425f-96e4-3d66fd54f54c',
         description: 'Building and deploying automated CI/CD pipelines using Jenkins for continuous integration and delivery.',
         category: 'CI/CD',
     },

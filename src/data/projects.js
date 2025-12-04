@@ -4,10 +4,12 @@ import portfolio1Img from '../assets/projects/Portfolio1.png';
 import portfolio2Img from '../assets/projects/Portfolio2.png';
 
 // New Project Images
-import lankaReliefImg from '../assets/projects/LankaReleif.jpg';
+import lankaReliefImg from '../assets/projects/LankaRelief.jpg';
 import lingoLeapImg from '../assets/projects/LingoLeap.jpg';
 import pocketKadeImg from '../assets/projects/PocketKade.png';
 import classPayImg from '../assets/projects/ClassPay.png';
+import agriVisionImg from '../assets/projects/AgriVisionPro.png';
+import uniwizImg from '../assets/projects/UniWiz.png';
 
 // CI/CD Gallery Images
 import cicd1 from '../assets/projects/CI_CD/1.jpg';
@@ -48,7 +50,7 @@ export const projects = [
     liveDemo: '',
     github: 'https://github.com/DKPBanuka/example-voting-app',
     linkedin: 'https://www.linkedin.com/posts/pasindubanuka001_azuredevops-cicd-devops-ugcPost-7397537908074631168-x6IX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFVscvIBDafF4JQyPkZxhRJm0GczupXj9Yo',
-    image: devopsImg,
+    image: cicd1,
     gallery: [cicd1, cicd2, cicd3, cicd4, cicd5],
     techStack: [
       { name: 'Azure DevOps', icon: 'azure' },
@@ -103,7 +105,7 @@ export const projects = [
     ],
     liveDemo: '',
     github: 'https://github.com/DKPBanuka/AgriVisionPro',
-    image: portfolioImg, // Using generic portfolio image as no specific one found
+    image: agriVisionImg,
     gallery: [],
     techStack: [
       { name: 'PHP', icon: 'php' },
@@ -120,7 +122,7 @@ export const projects = [
     ],
     liveDemo: '',
     github: 'https://github.com/DKPBanuka/UniWiz_Parttime',
-    image: portfolio1Img, // Using generic portfolio image
+    image: uniwizImg,
     gallery: [],
     techStack: [
       { name: 'React', icon: 'react' },
