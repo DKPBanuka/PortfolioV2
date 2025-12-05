@@ -1,35 +1,25 @@
-# Stage 1: Build the React application
-FROM node:18-alpine AS build
+# Stage 1: Build the React Application
+FROM node:18-alpine as build
 
 WORKDIR /app
 
-# Copy package files and install dependencies
-COPY package*.json ./
-RUN npm ci
+# Copy package files
+COPY package.json package-lock.json ./
 
-# Copy source code
+# Install dependencies with --legacy-peer-deps to avoid version conflicts
+# Removed --omit=dev because build tools are needed
+RUN npm install --legacy-peer-deps
+
+# Copy remaining files and build
 COPY . .
-
-# Build the application
 RUN npm run build
 
-# Stage 2: Serve the application with Express
-FROM node:18-alpine
+# Stage 2: Serve with Nginx
+FROM nginx:alpine
 
-WORKDIR /app
+# Copy built files to Nginx folder
+COPY --from=build /app/dist /usr/share/nginx/html
 
-# Copy package files and install production dependencies
-COPY package*.json ./
-RUN npm ci --omit=dev
+EXPOSE 80
 
-# Copy built assets from the build stage
-COPY --from=build /app/dist ./dist
-
-# Copy server code
-COPY server ./server
-
-# Expose the port
-EXPOSE 4000
-
-# Start the server
-CMD ["node", "server/sendEmail.js"]
+CMD ["nginx", "-g", "daemon off;"]

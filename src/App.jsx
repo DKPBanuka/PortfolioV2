@@ -10,6 +10,7 @@ import About from './sections/About';
 import Certification from './sections/Certification';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import Education from './sections/Education';
 import Contact from './sections/Contact';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Education />
         <Certification />
         <Skills />
         <Projects />

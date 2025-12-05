@@ -1,14 +1,14 @@
 import React from 'react';
-import { FaBriefcase, FaCode, FaGraduationCap, FaCoffee } from 'react-icons/fa';
+import { FaLightbulb, FaPuzzlePiece, FaUsers, FaRocket } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import SectionWrapper from '../components/SectionWrapper';
 import profileImg from '../assets/profile-image.png';
 
-const stats = [
-  { icon: <FaBriefcase size={30} />, value: '7+', label: 'Projects Completed' },
-  { icon: <FaCode size={30} />, value: '10+', label: 'Technologies' },
-  { icon: <FaGraduationCap size={30} />, value: '3rd', label: 'Year Undergraduate' },
-  { icon: <FaCoffee size={30} />, value: '100+', label: 'Coding Hours/Week' },
+const competencies = [
+  { icon: <FaLightbulb size={24} />, title: 'Fast Learner', desc: 'Quickly adapt to new tech stacks and environments.' },
+  { icon: <FaPuzzlePiece size={24} />, title: 'Problem Solver', desc: 'Analytical mindset for efficient debugging and logic building.' },
+  { icon: <FaUsers size={24} />, title: 'Team Player', desc: 'Effective communication and collaboration in agile teams.' },
+  { icon: <FaRocket size={24} />, title: 'Passionate', desc: 'Dedicated to writing clean, maintainable, and efficient code.' },
 ];
 
 const About = () => {
@@ -55,22 +55,24 @@ const About = () => {
           </motion.div>
         </div>
 
-        {/* Right: Stats */}
-        <div className="grid grid-cols-2 gap-6">
-          {stats.map((stat, index) => (
+        {/* Right: Key Competencies */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {competencies.map((item, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-terminal-dark border border-slate-800 p-6 rounded-lg text-center hover:border-neon-cyan/50 transition-all group"
+              className="bg-terminal-dark border border-slate-800 p-5 rounded-lg hover:border-neon-cyan/50 transition-all group"
             >
-              <div className="text-neon-cyan mb-3 inline-block group-hover:scale-110 transition-transform">
-                {stat.icon}
+              <div className="text-neon-cyan mb-3 group-hover:scale-110 transition-transform">
+                {item.icon}
               </div>
-              <h4 className="text-2xl font-bold text-white font-mono">{stat.value}</h4>
-              <p className="text-slate-500 text-xs font-mono mt-1">{stat.label}</p>
+              <h4 className="text-lg font-bold text-white font-mono mb-2">{item.title}</h4>
+              <p className="text-slate-400 text-xs leading-relaxed">
+                {item.desc}
+              </p>
             </motion.div>
           ))}
         </div>
