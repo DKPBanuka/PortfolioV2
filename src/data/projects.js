@@ -1,7 +1,6 @@
 import portfolioImg from '../assets/projects/Portfolio.png';
-import devopsImg from '../assets/projects/devops.webp';
+import devopsImg from '../assets/projects/devopsArchitecture.jpg';
 import portfolio1Img from '../assets/projects/Portfolio1.png';
-import portfolio2Img from '../assets/projects/Portfolio2.png';
 
 // New Project Images
 import lankaReliefImg from '../assets/projects/LankaRelief.jpg';
@@ -10,6 +9,7 @@ import pocketKadeImg from '../assets/projects/PocketKade.png';
 import classPayImg from '../assets/projects/ClassPay.png';
 import agriVisionImg from '../assets/projects/AgriVisionPro.png';
 import uniwizImg from '../assets/projects/UniWiz.png';
+import portfolioV2Img from '../assets/projects/portfoliov2.jpg';
 
 // CI/CD Gallery Images
 import cicd1 from '../assets/projects/CI_CD/1.jpg';
@@ -19,6 +19,26 @@ import cicd4 from '../assets/projects/CI_CD/4.jpg';
 import cicd5 from '../assets/projects/CI_CD/5.jpg';
 
 export const projects = [
+  {
+    name: 'Portfolio V2: Full-Stack & Enterprise Cloud Architecture',
+    description: 'A dual-perspective project demonstrating end-to-end software delivery. While the live site utilizes a Vercel Serverless architecture for edge-caching and cost optimization (FinOps), I simultaneously designed and simulated a robust AWS + Kubernetes pipeline to demonstrate enterprise-level scalability and container orchestration.',
+    features: [
+      'Enterprise Infrastructure Design: Designed a comprehensive CI/CD pipeline using Jenkins, Ansible, and Kubernetes (EKS) on AWS to handle high-traffic simulation and container orchestration.',
+      'Production Strategy (FinOps): Strategically deployed the live version on Vercel Edge Network, prioritizing zero-cost infrastructure without compromising on global performance and SSL security.',
+      'Full-Stack Engineering: Developed a reactive, terminal-themed UI using React & Vite, packaged via Docker multi-stage builds to ensure environment consistency across dev and prod.'
+    ],
+    liveDemo: 'https://pasindubanuka.vercel.app', // Assuming this URL, user can update
+    github: 'https://github.com/DKPBanuka/PortfolioV2',
+    image: portfolioV2Img,
+    gallery: [devopsImg],
+    techStack: [
+      { name: 'AWS EKS', icon: 'cloud' },
+      { name: 'Jenkins', icon: 'jenkins' },
+      { name: 'Docker', icon: 'docker' },
+      { name: 'Vercel', icon: 'cloud' },
+      { name: 'React 19', icon: 'react' }
+    ],
+  },
   {
     name: 'LankaRelief - Disaster Management Platform',
     description: 'A centralized platform connecting donors, victims, and volunteers for real-time disaster coordination.',
