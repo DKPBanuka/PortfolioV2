@@ -1,6 +1,6 @@
 export const profile = {
     name: "Pasindu Banuka",
-    role: "DevOps Engineer",
+    role: "Software Engineer",
     secondaryRole: "Full Stack Developer",
     bio: "Passionate about creating innovative digital solutions that bridge technology and creativity. Specialized in full‑stack development and DevOps.",
     email: "pasindubanuka155@gmail.com",
