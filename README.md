@@ -1,16 +1,90 @@
-# React + Vite
+# Portfolio V2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive developer portfolio built with React, Vite, and Tailwind CSS. It features a terminal-inspired aesthetic with neon accents and includes sections for projects, skills, certifications, and education.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Fully responsive layout for all devices.
+- **Terminal Aesthetic**: Dark mode with neon green/pink accents and monospace fonts.
+- **Interactive Elements**: Framer Motion animations and hover effects.
+- **Email Contact Form**: Functional contact form using Resend (works locally and on Vercel).
+- **Docker Support**: Containerized for easy deployment.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19, Vite, Tailwind CSS v4
+- **Animations**: Framer Motion, React Type Animation, React Tag Sphere
+- **Backend (Local)**: Node.js, Express
+- **Backend (Production)**: Vercel Serverless Functions
+- **Email Service**: Resend
 
-## Expanding the ESLint configuration
+## 📦 Installation & Local Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/portfolioV2.git
+    cd portfolioV2
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Set up Environment Variables:**
+    Create a `.env` file in the root directory and add your Resend API key:
+    ```env
+    RESEND_API_KEY=re_123456789
+    ```
+
+4.  **Run the Development Server:**
+    ```bash
+    # Terminal 1: Start the Frontend
+    npm run dev
+
+    # Terminal 2: Start the Backend Server (for local email sending)
+    npm run start:server
+    ```
+    Access the app at `http://localhost:5173`.
+
+## 🐳 Docker
+
+Build and run the application using Docker:
+
+1.  **Build the Image:**
+    ```bash
+    docker build -t my-portfolio:v1 .
+    ```
+
+2.  **Run the Container:**
+    ```bash
+    docker run -d -p 3000:80 --name my-website my-portfolio:v1
+    ```
+    Access the app at `http://localhost:3000`.
+
+## ☁️ Deployment (Vercel)
+
+This project is optimized for deployment on Vercel.
+
+1.  Push your code to a GitHub repository.
+2.  Import the project into Vercel.
+3.  **Environment Variables**: Go to Project Settings > Environment Variables and add:
+    - `RESEND_API_KEY`: Your Resend API key.
+4.  Deploy!
+
+The email functionality uses Vercel Serverless Functions (`api/send-email.js`), so no separate backend server is required.
+
+## 📂 Project Structure
+
+- `src/`: React source code
+  - `components/`: Reusable UI components (Navbar, Footer, etc.)
+  - `sections/`: Main page sections (Hero, About, Projects, etc.)
+  - `data/`: Static data files (projects, skills, education)
+  - `assets/`: Images and static assets
+- `server/`: Express server for local development
+- `api/`: Vercel Serverless Functions
+- `public/`: Static files (favicon, etc.)
+
+## 📄 License
+
+MIT License
