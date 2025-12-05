@@ -2,6 +2,18 @@
 
 A modern, responsive developer portfolio built with React, Vite, and Tailwind CSS. It features a terminal-inspired aesthetic with neon accents and includes sections for projects, skills, certifications, and education.
 
+## 🚀 Project Overview: Full-Stack & Enterprise Cloud Architecture
+
+This project is a dual-perspective demonstration of end-to-end software delivery, combining modern web development with enterprise-grade DevOps practices.
+
+### 🏗️ Architecture Highlights
+
+![DevOps Architecture](src/assets/projects/devopsArchitecture.jpg)
+
+- **Enterprise Infrastructure Design**: Designed a comprehensive CI/CD pipeline using **Jenkins**, **Ansible**, and **Kubernetes (EKS)** on AWS to handle high-traffic simulation and container orchestration.
+- **Production Strategy (FinOps)**: Strategically deployed the live version on **Vercel Edge Network**, prioritizing zero-cost infrastructure without compromising on global performance and SSL security.
+- **Full-Stack Engineering**: Developed a reactive, terminal-themed UI using **React 19** & **Vite**, packaged via **Docker** multi-stage builds to ensure environment consistency.
+
 ## 🚀 Features
 
 - **Responsive Design**: Fully responsive layout for all devices.
