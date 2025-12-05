@@ -1,6 +1,12 @@
-import portfolioImg from '../assets/projects/Portfolio.png';
-import devopsImg from '../assets/projects/devopsArchitecture.jpg';
-import portfolio1Img from '../assets/projects/Portfolio1.png';
+import portfolioDevopsImg from '../assets/projects/AwsPortfolio/PortfolioDevops.png';
+import portfolioV2Img from '../assets/projects/AwsPortfolio/portfoliov2.jpg';
+import devopsArchitectureImg from '../assets/projects/AwsPortfolio/devopsArchitecture.jpg';
+import aws01 from '../assets/projects/AwsPortfolio/0.1.png';
+import aws02 from '../assets/projects/AwsPortfolio/0.2.png';
+import aws03 from '../assets/projects/AwsPortfolio/0.3.png';
+import aws04 from '../assets/projects/AwsPortfolio/0.4.png';
+import aws05 from '../assets/projects/AwsPortfolio/0.5.png';
+import aws06 from '../assets/projects/AwsPortfolio/0.6.png';
 
 // New Project Images
 import lankaReliefImg from '../assets/projects/LankaRelief.jpg';
@@ -9,8 +15,6 @@ import pocketKadeImg from '../assets/projects/PocketKade.png';
 import classPayImg from '../assets/projects/ClassPay.png';
 import agriVisionImg from '../assets/projects/AgriVisionPro.png';
 import uniwizImg from '../assets/projects/UniWiz.png';
-import portfolioV2Img from '../assets/projects/portfoliov2.jpg';
-
 // CI/CD Gallery Images
 import cicd1 from '../assets/projects/CI_CD/1.jpg';
 import cicd2 from '../assets/projects/CI_CD/2.jpg';
@@ -27,10 +31,10 @@ export const projects = [
       'Production Strategy (FinOps): Strategically deployed the live version on Vercel Edge Network, prioritizing zero-cost infrastructure without compromising on global performance and SSL security.',
       'Full-Stack Engineering: Developed a reactive, terminal-themed UI using React & Vite, packaged via Docker multi-stage builds to ensure environment consistency across dev and prod.'
     ],
-    liveDemo: 'https://pasindubanuka.vercel.app', // Assuming this URL, user can update
+    liveDemo: 'https://portfolio-v2-git-main-pasindu-banukas-projects.vercel.app/', // Assuming this URL, user can update
     github: 'https://github.com/DKPBanuka/PortfolioV2',
-    image: portfolioV2Img,
-    gallery: [devopsImg],
+    image: portfolioDevopsImg,
+    gallery: [portfolioV2Img, devopsArchitectureImg, aws01, aws02, aws03, aws04, aws05, aws06],
     techStack: [
       { name: 'AWS EKS', icon: 'cloud' },
       { name: 'Jenkins', icon: 'jenkins' },
