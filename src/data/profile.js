@@ -1,4 +1,4 @@
-import resume from '../assets/Pasindu_Banuka_CV.pdf';
+
 
 export const profile = {
     name: "Pasindu Banuka",
@@ -13,5 +13,5 @@ export const profile = {
         linkedin: "https://www.linkedin.com/in/pasindu-banuka-216b7133b",
         whatsapp: "https://wa.me/94789287469",
     },
-    resumeUrl: resume,
+    resumeUrl: "/Pasindu_Banuka_CV.pdf",
 };
