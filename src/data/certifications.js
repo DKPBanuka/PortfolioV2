@@ -17,14 +17,15 @@ export const certifications = [
         category: 'Networking',
     },
     {
-        image: awsImg,
-        title: 'Introduction to Amazon Q Developer',
-        org: 'AWS Training & Certification',
+        image: jenkinsImg,
+        title: 'Jenkins: CI/CD with Jenkins',
+        org: 'Udemy',
         issueDate: '2025',
-        credential: '', // Placeholder or generic link
-        description: 'Technical introduction to Amazon Q, covering its capabilities as a generative AI-powered assistant for software development.',
-        category: 'Cloud & AI',
-    },
+        credential: 'https://www.udemy.com/certificate/UC-73872441-f23b-425f-96e4-3d66fd54f54c',
+        description: 'Building and deploying automated CI/CD pipelines using Jenkins for continuous integration and delivery.',
+        category: 'CI/CD',
+    }
+    ,
     {
         image: dockerImg,
         title: 'Docker for the Absolute Beginner',
@@ -62,12 +63,13 @@ export const certifications = [
         category: 'Version Control',
     },
     {
-        image: jenkinsImg,
-        title: 'Jenkins: CI/CD with Jenkins',
-        org: 'Udemy',
+        image: awsImg,
+        title: 'Introduction to Amazon Q Developer',
+        org: 'AWS Training & Certification',
         issueDate: '2025',
-        credential: 'https://www.udemy.com/certificate/UC-73872441-f23b-425f-96e4-3d66fd54f54c',
-        description: 'Building and deploying automated CI/CD pipelines using Jenkins for continuous integration and delivery.',
-        category: 'CI/CD',
-    },
+        credential: '', // Placeholder or generic link
+        description: 'Technical introduction to Amazon Q, covering its capabilities as a generative AI-powered assistant for software development.',
+        category: 'Cloud & AI',
+    }
+    ,
 ];

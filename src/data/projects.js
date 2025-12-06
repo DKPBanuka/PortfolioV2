@@ -14,7 +14,14 @@ import lingoLeapImg from '../assets/projects/LingoLeap.jpg';
 import pocketKadeImg from '../assets/projects/PocketKade.png';
 import classPayImg from '../assets/projects/ClassPay.png';
 import agriVisionImg from '../assets/projects/AgriVisionPro.png';
-import uniwizImg from '../assets/projects/UniWiz.png';
+import uniwizImg from '../assets/projects/Uniwiz/Uniwiz.png';
+import uniwiz2 from '../assets/projects/Uniwiz/2.jpeg';
+import uniwiz3 from '../assets/projects/Uniwiz/3.jpeg';
+import uniwiz4 from '../assets/projects/Uniwiz/4.jpeg';
+import uniwiz5 from '../assets/projects/Uniwiz/5.jpeg';
+import uniwiz6 from '../assets/projects/Uniwiz/6.jpeg';
+import uniwiz7 from '../assets/projects/Uniwiz/7.jpeg';
+import uniwiz8 from '../assets/projects/Uniwiz/8.jpeg';
 // CI/CD Gallery Images
 import cicd1 from '../assets/projects/CI_CD/1.jpg';
 import cicd2 from '../assets/projects/CI_CD/2.jpg';
@@ -31,7 +38,7 @@ export const projects = [
       'Production Strategy (FinOps): Strategically deployed the live version on Vercel Edge Network, prioritizing zero-cost infrastructure without compromising on global performance and SSL security.',
       'Full-Stack Engineering: Developed a reactive, terminal-themed UI using React & Vite, packaged via Docker multi-stage builds to ensure environment consistency across dev and prod.'
     ],
-    liveDemo: 'https://portfolio-v2-git-main-pasindu-banukas-projects.vercel.app/', // Assuming this URL, user can update
+    liveDemo: 'https://portfolio-v2-kappa-lilac.vercel.app/',
     github: 'https://github.com/DKPBanuka/PortfolioV2',
     image: portfolioDevopsImg,
     gallery: [portfolioV2Img, devopsArchitectureImg, aws01, aws02, aws03, aws04, aws05, aws06],
@@ -147,7 +154,7 @@ export const projects = [
     liveDemo: '',
     github: 'https://github.com/DKPBanuka/UniWiz_Parttime',
     image: uniwizImg,
-    gallery: [],
+    gallery: [uniwiz2, uniwiz3, uniwiz4, uniwiz5, uniwiz6, uniwiz7, uniwiz8],
     techStack: [
       { name: 'React', icon: 'react' },
       { name: 'PHP', icon: 'php' },
