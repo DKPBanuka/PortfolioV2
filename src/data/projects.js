@@ -38,7 +38,7 @@ export const projects = [
       'Production Strategy (FinOps): Strategically deployed the live version on Vercel Edge Network, prioritizing zero-cost infrastructure without compromising on global performance and SSL security.',
       'Full-Stack Engineering: Developed a reactive, terminal-themed UI using React & Vite, packaged via Docker multi-stage builds to ensure environment consistency across dev and prod.'
     ],
-    liveDemo: 'https://portfolio-v2-kappa-lilac.vercel.app/',
+    liveDemo: 'https://pasindubanuka.vercel.app',
     github: 'https://github.com/DKPBanuka/PortfolioV2',
     image: portfolioDevopsImg,
     gallery: [portfolioV2Img, devopsArchitectureImg, aws01, aws02, aws03, aws04, aws05, aws06],
