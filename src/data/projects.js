@@ -40,6 +40,7 @@ export const projects = [
     ],
     liveDemo: 'https://pasindubanuka.vercel.app',
     github: 'https://github.com/DKPBanuka/PortfolioV2',
+    linkedin:'',
     image: portfolioDevopsImg,
     gallery: [portfolioV2Img, devopsArchitectureImg, aws01, aws02, aws03, aws04, aws05, aws06],
     techStack: [
@@ -47,7 +48,8 @@ export const projects = [
       { name: 'Jenkins', icon: 'jenkins' },
       { name: 'Docker', icon: 'docker' },
       { name: 'Vercel', icon: 'cloud' },
-      { name: 'React 19', icon: 'react' }
+      { name: 'React 19', icon: 'react' },
+      { name: 'Kubernetes', icon: 'kubernetes' },
     ],
   },
   {
