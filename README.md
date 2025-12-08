@@ -83,6 +83,7 @@ This project is optimized for deployment on Vercel.
 3.  **Environment Variables**: Go to Project Settings > Environment Variables and add:
     - `RESEND_API_KEY`: Your Resend API key.
 4.  Deploy!
+5.  **Analytics**: To enable link engagement tracking, go to the "Analytics" tab in your Vercel project dashboard and click "Enable".
 
 The email functionality uses Vercel Serverless Functions (`api/send-email.js`), so no separate backend server is required.
 
