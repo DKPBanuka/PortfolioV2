@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Analytics } from '@vercel/analytics/react';
+import { inject } from '@vercel/analytics';
 import App from './App.jsx';
 import './index.css'; // This line is VERY important!
+
+// Initialize Vercel Web Analytics on the client side
+inject();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-    <Analytics />
   </React.StrictMode>,
 );
