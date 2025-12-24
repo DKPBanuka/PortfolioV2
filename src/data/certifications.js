@@ -6,6 +6,7 @@ import gitImg from '../assets/certification/KodeKloud_GitCourse_Certificate.png'
 import jenkinsImg from '../assets/certification/Udemy_Jenkins&CiCd.jpg';
 import aviatrixImg from '../assets/certification/Aviatrix.png';
 import ansibleImg from '../assets/certification/KodeKloud_AnsibleCourse_Certificate.png';
+import devopsImg from '../assets/certification/KodeKloud_LinuxCourse_Certificate.png';
 
 export const certifications = [
     {
@@ -18,13 +19,13 @@ export const certifications = [
         category: 'Networking',
     },
     {
-        image: ansibleImg,
-        title: 'Ansible for the Absolute Beginner',
+        image: devopsImg,
+        title: '100 Days of DevOps',
         org: 'KodeKloud',
         issueDate: '2025',
-        credential: 'https://engineer.kodekloud.com/certificate-verification/3b440992-db59-4a5f-bfb8-45176304d142',
-        description: 'Automating IT infrastructure, application deployment, and configuration management using Ansible playbooks and roles.',
-        category: 'Automation',
+        credential: 'https://engineer.kodekloud.com/certificate-verification/20bf9870-cf5d-4227-8f3d-9288361aee14',
+        description: 'An intensive 100-day hands-on bootcamp covering Linux, Docker, Kubernetes, IaC (Terraform/Ansible), and CI/CD pipelines from scratch to advanced level.',
+        category: 'DevOps',
     },
     {
         image: jenkinsImg,
@@ -34,8 +35,16 @@ export const certifications = [
         credential: 'https://www.udemy.com/certificate/UC-73872441-f23b-425f-96e4-3d66fd54f54c',
         description: 'Building and deploying automated CI/CD pipelines using Jenkins for continuous integration and delivery.',
         category: 'CI/CD',
-    }
-    ,
+    },
+    {
+        image: ansibleImg,
+        title: 'Ansible for the Absolute Beginner',
+        org: 'KodeKloud',
+        issueDate: '2025',
+        credential: 'https://engineer.kodekloud.com/certificate-verification/3b440992-db59-4a5f-bfb8-45176304d142',
+        description: 'Automating IT infrastructure, application deployment, and configuration management using Ansible playbooks and roles.',
+        category: 'Automation',
+    },
     {
         image: dockerImg,
         title: 'Docker for the Absolute Beginner',
@@ -77,7 +86,7 @@ export const certifications = [
         title: 'Introduction to Amazon Q Developer',
         org: 'AWS Training & Certification',
         issueDate: '2025',
-        credential: '', // Placeholder or generic link
+        credential: '',
         description: 'Technical introduction to Amazon Q, covering its capabilities as a generative AI-powered assistant for software development.',
         category: 'Cloud & AI',
     }
