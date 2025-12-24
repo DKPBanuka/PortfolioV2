@@ -5,6 +5,7 @@ import linuxImg from '../assets/certification/KodeKloud_LinuxCourse_Certificate.
 import gitImg from '../assets/certification/KodeKloud_GitCourse_Certificate.png';
 import jenkinsImg from '../assets/certification/Udemy_Jenkins&CiCd.jpg';
 import aviatrixImg from '../assets/certification/Aviatrix.png';
+import ansibleImg from '../assets/certification/KodeKloud_AnsibleCourse_Certificate.png';
 
 export const certifications = [
     {
@@ -15,6 +16,15 @@ export const certifications = [
         credential: 'https://www.credly.com/badges/9bb0c525-db14-4a5a-9220-79d16c3742de/linked_in_profile',
         description: 'Proven expertise in multicloud networking, security, and operations across AWS, Azure, Google Cloud, and OCI.',
         category: 'Networking',
+    },
+    {
+        image: ansibleImg,
+        title: 'Ansible for the Absolute Beginner',
+        org: 'KodeKloud',
+        issueDate: '2025',
+        credential: 'https://engineer.kodekloud.com/certificate-verification/3b440992-db59-4a5f-bfb8-45176304d142',
+        description: 'Automating IT infrastructure, application deployment, and configuration management using Ansible playbooks and roles.',
+        category: 'Automation',
     },
     {
         image: jenkinsImg,
