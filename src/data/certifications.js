@@ -6,7 +6,7 @@ import gitImg from '../assets/certification/KodeKloud_GitCourse_Certificate.png'
 import jenkinsImg from '../assets/certification/Udemy_Jenkins&CiCd.jpg';
 import aviatrixImg from '../assets/certification/Aviatrix.png';
 import ansibleImg from '../assets/certification/KodeKloud_AnsibleCourse_Certificate.png';
-import devopsImg from '../assets/certification/KodeKloud_LinuxCourse_Certificate.png';
+import devopsImg from '../assets/certification/KodeKloud 100 days of Devops Certificate.jpg';
 
 export const certifications = [
     {
